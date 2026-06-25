@@ -15,4 +15,9 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PixSystemCore.Application\PixSystemCore.Application.csproj" />
+    <ProjectReference Include="..\PixSystemCore.Infrastructure\PixSystemCore.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
