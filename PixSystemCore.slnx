@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/PixSystemCore.Application/PixSystemCore.Application.csproj" />
+    <Project Path="src/PixSystemCore.Api/PixSystemCore.Api.csproj" />
+    <Project Path="src/PixSystemCore.Domain/PixSystemCore.Domain.csproj" Id="8e655a55-e2cb-4f3f-a32f-40cc4db406b4" />
+    <Project Path="src/PixSystemCore.Infrastructure/PixSystemCore.Infrastructure.csproj" Id="210afd2a-7d82-4acb-a518-21f0e917112f" />
+    <Project Path="src/PixSystemCore.Worker/PixSystemCore.Worker.csproj" Id="4cadef23-996c-4fb8-810b-dc8b744fdbb7" />
+  </Folder>
+  <Folder Name="/tests/" />
+</Solution>
