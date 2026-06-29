@@ -64,7 +64,7 @@ public class Account
         Balance += valor;
     }
 
-    public Transaction AdicionarTransacao(Transaction transacao)
+    public Transaction AddTransaction(Transaction transacao)
     {
         _transactions.Add(transacao);
         return transacao;
