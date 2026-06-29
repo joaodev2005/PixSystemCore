@@ -7,7 +7,7 @@ public class ExecutePixCommand : IRequest<ExecutePixResponse>
     public Guid SourceAccountId { get; init; }
     public string TargetPixKey { get; init; }
     public decimal Amount { get; init; }
-    public string IdempotencyKey { get; init; }
+    public string IdempotencyKey { get; set; }
 }
 
 public record ExecutePixResponse
