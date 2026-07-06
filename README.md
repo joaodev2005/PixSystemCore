@@ -1,4 +1,4 @@
-# 🚀 PixSystem Core
+# 🚀 PixSystemCore
 
 Este projeto é uma implementação robusta de um sistema de processamento de Pix, focado em alta disponibilidade, consistência e boas práticas de arquitetura. O sistema utiliza **DDD (Domain-Driven Design)**, **CQRS (via MediatR)** e conta com uma suíte de testes de integração automatizados.
 
