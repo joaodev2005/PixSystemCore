@@ -35,8 +35,45 @@ Este projeto utiliza **Testcontainers** para garantir que os testes de integraç
 - Docker Desktop instalado e rodando.
 - .NET 8.0 SDK.
 
-### Comandos
-Para rodar os testes, use o seguinte comando na raiz do projeto:
+## 🏗 Diagrama de Arquitetura
 
-```bash
-dotnet test
+O fluxo de processamento do sistema segue uma estrutura desacoplada, garantindo que a lógica de negócio seja independente de frameworks externos:
+
+```mermaid
+graph TD
+    API[API Controllers] --> MediatR[MediatR CQRS]
+    MediatR --> App[Application Handlers]
+    App --> Domain[Domain Entities]
+    App --> Infra[Infrastructure EF Core]
+    Infra --> DB[(SQL Server)]
+    Infra --> Kafka[Kafka/Redis]
+ ```
+
+## 🏁 Getting Started
+
+Para obter uma cópia local funcionando, siga estes passos simples.
+
+### Pré-requisitos
+* [.NET 10 SDK](https://dotnet.microsoft.com/download)
+* [Docker Desktop](https://www.docker.com/products/docker-desktop/) instalado e rodando
+
+### Passo a Passo
+
+1. Clone o repositório:
+   ```bash
+   git clone [https://github.com/joaodev2005/PixSystemCore.git](https://github.com/joaodev2005/PixSystemCore.git)
+   cd PixSystemCore
+   ```
+2. Suba a infraestrutura necessária (SQL Server, Kafka e Redis) via Docker Compose:
+   ```bash
+   docker compose up -d
+   ```
+3. Rode a aplicação principal:
+   ```bash
+   dotnet run --project src/PixSystemCore.API
+   ```
+4. Para rodar a suíte de testes localmente:
+   ```bash
+   dotnet test
+   ```
+
