@@ -4,7 +4,7 @@ Este projeto é uma implementação robusta de um sistema de processamento de Pi
 
 ## 🛠 Tecnologias Principais
 
-* **.NET 8.0**
+* **.NET 10**
 * **Entity Framework Core** (SQL Server)
 * **MediatR** (Padrão CQRS)
 * **Docker & Testcontainers** (Para testes de integração isolados)
